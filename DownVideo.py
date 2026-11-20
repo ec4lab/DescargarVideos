@@ -90,6 +90,9 @@ def descargar():
         "noplaylist": False,
         "concurrent_fragment_downloads": 4,   # descarga más rápida
         "progress_hooks": [progreso],
+        "extractor_args": {
+        "youtube": ["player_client=android"]
+        },
     }
 
     if formato == "mp3":
